@@ -1,0 +1,567 @@
+1
+00:00:00,580 --> 00:00:01,630
+All righty.
+
+2
+00:00:01,690 --> 00:00:08,080
+So the first thing you're going to do is be sure to download the template for this project from the
+
+3
+00:00:08,080 --> 00:00:08,680
+course.
+
+4
+00:00:09,310 --> 00:00:12,760
+And once you've unzipped it, you're now where I'm at now.
+
+5
+00:00:13,540 --> 00:00:19,570
+And I'm just going to go about renaming this, removing the template part to show that I am now going
+
+6
+00:00:19,570 --> 00:00:21,610
+to actively work on the project.
+
+7
+00:00:22,660 --> 00:00:31,960
+So the next step will be to open this in visual studio code so we can see that we have an MP for file
+
+8
+00:00:31,960 --> 00:00:32,350
+here.
+
+9
+00:00:32,410 --> 00:00:35,470
+This is a video background file that I've added.
+
+10
+00:00:36,370 --> 00:00:39,730
+And you can see that I've also added some CSF as well.
+
+11
+00:00:40,960 --> 00:00:45,640
+The very first thing we're gonna do is we're gonna focus on adding a video background.
+
+12
+00:00:46,270 --> 00:00:52,170
+So the following explanation would be relevant for any project you want to add a video background to.
+
+13
+00:00:52,840 --> 00:00:58,150
+If you don't want to add a video background to this project and you want to just add a background image
+
+14
+00:00:58,180 --> 00:01:04,930
+or a background color, you can just remove this video background, CSX from the template and you can
+
+15
+00:01:04,930 --> 00:01:07,760
+skip ahead to the next video.
+
+16
+00:01:08,680 --> 00:01:13,360
+But if you are interested in learning about adding a video background and making it mobile responsive,
+
+17
+00:01:13,690 --> 00:01:15,520
+I'm going to explain that now.
+
+18
+00:01:16,480 --> 00:01:22,420
+So there are a lot of options out there for stock video, but the one that I'm going to show you is
+
+19
+00:01:22,420 --> 00:01:23,030
+PIC's eBay.
+
+20
+00:01:23,140 --> 00:01:24,820
+This is one that I like to use.
+
+21
+00:01:24,940 --> 00:01:29,290
+It has a lot of great footage and a lot of free options as well.
+
+22
+00:01:29,950 --> 00:01:33,130
+So if you scroll down, you're just gonna pick a video that you like.
+
+23
+00:01:33,340 --> 00:01:36,250
+I'm gonna go with this first one here, this Mountain View.
+
+24
+00:01:36,790 --> 00:01:41,320
+When you click on it, you can see here we have the option to download the video.
+
+25
+00:01:42,010 --> 00:01:46,360
+And when we click on that, we can see that we have some different quality sizes here.
+
+26
+00:01:46,450 --> 00:01:49,200
+So you have four K of ten, eighty and 720.
+
+27
+00:01:49,900 --> 00:01:56,800
+I usually go with 720 for video backgrounds because I will often put a video overlay over them.
+
+28
+00:01:57,280 --> 00:02:00,010
+So that will mask any kind of lack of quality.
+
+29
+00:02:00,760 --> 00:02:06,970
+And we also want our videos to be as small as possible so that our Web site loads quickly.
+
+30
+00:02:07,780 --> 00:02:13,510
+We can see that this 720 video is still 5.2 megabytes, which is pretty big.
+
+31
+00:02:13,990 --> 00:02:21,220
+So if we download that video, we can actually compress it a little bit further using the Web site.
+
+32
+00:02:21,280 --> 00:02:22,620
+You compress dot com.
+
+33
+00:02:22,960 --> 00:02:25,480
+Again, I'll provide a link for this within the course.
+
+34
+00:02:25,990 --> 00:02:28,620
+We're going to start by simply selecting our file.
+
+35
+00:02:31,830 --> 00:02:36,510
+And we're going to upload the file and compress just that simple.
+
+36
+00:02:36,720 --> 00:02:42,570
+So if you remember, our file size was five megabytes and we can see now that we've reduced the file
+
+37
+00:02:42,570 --> 00:02:44,670
+size by 70 percent.
+
+38
+00:02:44,700 --> 00:02:50,700
+So now our file size is only one point five megabytes, which I think is very good.
+
+39
+00:02:51,090 --> 00:02:51,450
+Awesome.
+
+40
+00:02:51,480 --> 00:02:52,840
+We have our videophone now.
+
+41
+00:02:53,610 --> 00:03:00,570
+So for our purposes, I've already added a video file within the course and I've taken it a step further.
+
+42
+00:03:00,960 --> 00:03:06,990
+And I've edited the file to allow it to play forwards and then backwards so that the infinite loop of
+
+43
+00:03:06,990 --> 00:03:09,390
+the video looks more seamless.
+
+44
+00:03:09,810 --> 00:03:15,000
+So that file size for that time video is also one point five megabytes.
+
+45
+00:03:15,030 --> 00:03:16,740
+So it is very small.
+
+46
+00:03:17,370 --> 00:03:21,090
+So once we have all that sorted out, we can jump back into our code.
+
+47
+00:03:22,410 --> 00:03:26,850
+And we're going to add to our each team at the top here.
+
+48
+00:03:26,880 --> 00:03:31,050
+We're going to comment on a title for our video background.
+
+49
+00:03:32,960 --> 00:03:36,020
+And we're going to have a video element here.
+
+50
+00:03:36,110 --> 00:03:40,910
+We're going to use the autocomplete to add the class of.
+
+51
+00:03:42,140 --> 00:03:44,590
+Video dash background.
+
+52
+00:03:45,590 --> 00:03:49,750
+We're actually going to use another element for our source within our video.
+
+53
+00:03:50,750 --> 00:03:54,050
+But we also want to set a few attributes on this as well.
+
+54
+00:03:54,560 --> 00:03:59,510
+So we want our video to loop and be muted and auto play.
+
+55
+00:04:00,230 --> 00:04:03,470
+So this is because we want it to be a constant video background.
+
+56
+00:04:03,470 --> 00:04:04,820
+That's why we want it on a loop.
+
+57
+00:04:05,330 --> 00:04:10,700
+We wanted to play right away as the page loads and the browser rules state, if you're going to play
+
+58
+00:04:10,700 --> 00:04:11,330
+a video.
+
+59
+00:04:11,630 --> 00:04:12,920
+It has to be muted.
+
+60
+00:04:13,790 --> 00:04:18,560
+So that's why we have our muted attribute there as well inside of this video.
+
+61
+00:04:20,100 --> 00:04:28,450
+We're going to add in our source element and we're gonna give this as our C attribute of time, that
+
+62
+00:04:28,470 --> 00:04:31,620
+MP for so you see that pretty populated for us.
+
+63
+00:04:32,340 --> 00:04:34,230
+And then below that, we're going to add in.
+
+64
+00:04:35,310 --> 00:04:39,030
+A div with the class of video overlay.
+
+65
+00:04:39,240 --> 00:04:41,610
+So this is going to be a transparent layer.
+
+66
+00:04:41,670 --> 00:04:43,230
+That's over top of our video.
+
+67
+00:04:43,650 --> 00:04:46,290
+As I said, it's going to hide any imperfections.
+
+68
+00:04:47,070 --> 00:04:48,720
+So let's just save that there.
+
+69
+00:04:49,290 --> 00:04:53,160
+And we're going to launch the project with our lives server extension.
+
+70
+00:04:56,120 --> 00:05:02,300
+Okay, so that's looking all right, but I know for a fact that the whole clock is visible in the video,
+
+71
+00:05:02,480 --> 00:05:05,000
+so we're gonna need to adjust some styling.
+
+72
+00:05:06,140 --> 00:05:11,540
+So back in our see assess, you can see that I've included some styling already.
+
+73
+00:05:12,380 --> 00:05:14,840
+And specifically for our video background.
+
+74
+00:05:15,680 --> 00:05:20,960
+So we have position fixed, meaning that on a site where we're scrolling through, we want the background
+
+75
+00:05:20,960 --> 00:05:26,420
+to always be in one place and we're going to anchor it to the bottom right corner of the page.
+
+76
+00:05:27,090 --> 00:05:35,090
+We will need to add a width of one hundred VW so that stance or viewport with that is the entire width
+
+77
+00:05:35,240 --> 00:05:37,310
+of the displayed window.
+
+78
+00:05:38,060 --> 00:05:41,330
+And we're gonna add a height property of auto.
+
+79
+00:05:42,140 --> 00:05:44,330
+So let's save that and check it out.
+
+80
+00:05:45,380 --> 00:05:47,360
+OK, so that's definitely looking better.
+
+81
+00:05:48,440 --> 00:05:50,930
+We have the whole video now and the whole clock.
+
+82
+00:05:51,710 --> 00:05:54,380
+But if we check on our mobile view.
+
+83
+00:05:56,740 --> 00:06:04,510
+We can see that this doesn't work at all because we have a horizontal video and we have a vertical screen
+
+84
+00:06:04,510 --> 00:06:11,590
+size here, so we're gonna go back to our CSX and we're going to go to the bottom where I've actually
+
+85
+00:06:11,590 --> 00:06:13,900
+already created a media query for you.
+
+86
+00:06:13,930 --> 00:06:17,890
+So this is designed for a large smartphone vertical.
+
+87
+00:06:18,340 --> 00:06:23,380
+So anything less than a max width of 600 pixels will apply these styles.
+
+88
+00:06:23,950 --> 00:06:28,960
+Remember that all media queries need to be at the bottom because they need to have the last word on
+
+89
+00:06:28,960 --> 00:06:31,540
+changing the class properties.
+
+90
+00:06:32,110 --> 00:06:37,900
+So for our video background, we're going to have a height of one hundred VH.
+
+91
+00:06:38,200 --> 00:06:44,470
+This time, instead of a height of auto and just explicitly we'll write out one hundred VW, even though
+
+92
+00:06:44,500 --> 00:06:45,580
+we're not changing that.
+
+93
+00:06:45,970 --> 00:06:48,430
+Just to make it easier to see what's happening.
+
+94
+00:06:48,790 --> 00:06:49,270
+OK.
+
+95
+00:06:49,510 --> 00:06:55,510
+And below that, we still need to do one other thing, and that is for our video itself.
+
+96
+00:06:55,540 --> 00:07:02,350
+We're going to need to add in an object fit property and we're going to use object fit cover.
+
+97
+00:07:02,890 --> 00:07:10,570
+So the object fit property allows you to make sure that a picture or a video fits whatever container
+
+98
+00:07:10,570 --> 00:07:13,150
+it's in without being distorted.
+
+99
+00:07:13,960 --> 00:07:16,480
+So let's save that and check it out.
+
+100
+00:07:17,670 --> 00:07:18,040
+OK.
+
+101
+00:07:18,110 --> 00:07:24,410
+So we can see that we've filled up the screen, which is great, but we can see that our clock now is
+
+102
+00:07:24,650 --> 00:07:26,000
+kind of off the page.
+
+103
+00:07:26,030 --> 00:07:28,760
+So we want that clock to be more in the center.
+
+104
+00:07:29,390 --> 00:07:36,980
+We can fix that using the styling object position alongside our object fit.
+
+105
+00:07:37,910 --> 00:07:44,330
+And you could enter in a horizontal and vertical value to shift the video position within the frame.
+
+106
+00:07:44,990 --> 00:07:47,690
+But in our case, we only need to shift it horizontally.
+
+107
+00:07:47,690 --> 00:07:52,730
+So we're only going to add one value and that value is going to be 70 percent.
+
+108
+00:07:53,540 --> 00:08:00,710
+So if we save that now and check it out, we can see that we have our clock centered nicely in our mobile
+
+109
+00:08:00,710 --> 00:08:01,220
+view.
+
+110
+00:08:02,040 --> 00:08:02,600
+OK.
+
+111
+00:08:02,720 --> 00:08:03,860
+That is awesome.
+
+112
+00:08:04,640 --> 00:08:09,260
+The very last thing is going to be to add the overlay that I mentioned previously.
+
+113
+00:08:09,980 --> 00:08:17,180
+The other reason for adding an overlay is so that it's easier to have this be a background image and
+
+114
+00:08:17,180 --> 00:08:20,510
+still read everything that is within the foreground.
+
+115
+00:08:22,680 --> 00:08:24,660
+So if we scroll back up to the top.
+
+116
+00:08:25,980 --> 00:08:30,250
+We can see that we already have a class again for our video overlay in a similar way.
+
+117
+00:08:30,270 --> 00:08:34,050
+It is fixed position anchored in the top left corner.
+
+118
+00:08:34,710 --> 00:08:40,830
+We're going to need to add a height of one hundred v h so V for height.
+
+119
+00:08:41,580 --> 00:08:46,920
+So the entire height of the window and we're going to do a similar thing.
+
+120
+00:08:46,970 --> 00:08:48,240
+One hundred viewport with.
+
+121
+00:08:48,720 --> 00:08:54,750
+And then we're going to need to actually add a background color to actually have it look like something.
+
+122
+00:08:55,270 --> 00:08:57,660
+We're going to use an RGV a value.
+
+123
+00:08:58,730 --> 00:09:01,070
+And in this case, I'm going to use white.
+
+124
+00:09:01,340 --> 00:09:03,860
+But you could use black or any other color.
+
+125
+00:09:04,880 --> 00:09:09,560
+And for the A. which stands for Alpha, also kind of means opacity.
+
+126
+00:09:10,100 --> 00:09:12,400
+I'm going to have point three five.
+
+127
+00:09:12,440 --> 00:09:14,520
+So that means it's 35 percent.
+
+128
+00:09:14,920 --> 00:09:15,690
+See through.
+
+129
+00:09:16,400 --> 00:09:19,220
+Let's say that and check it out.
+
+130
+00:09:20,460 --> 00:09:20,840
+OK.
+
+131
+00:09:20,960 --> 00:09:24,320
+So that allows everything to kind of fade a little bit more into the background.
+
+132
+00:09:24,350 --> 00:09:26,330
+And you can see if we were to have text here.
+
+133
+00:09:26,350 --> 00:09:31,850
+It would be a little easier to read because the yellow is not as bright as it was before.
+
+134
+00:09:32,720 --> 00:09:35,030
+So feel free to adjust as necessary.
+
+135
+00:09:35,060 --> 00:09:39,830
+The colors and opacity levels, especially if you're using a different video background on a different
+
+136
+00:09:39,830 --> 00:09:40,400
+project.
+
+137
+00:09:40,910 --> 00:09:44,090
+Oftentimes I have a black overlay instead of a white one.
+
+138
+00:09:44,480 --> 00:09:47,750
+But I thought that the white one works better in this case.
+
+139
+00:09:48,590 --> 00:09:49,010
+All right.
+
+140
+00:09:49,100 --> 00:09:54,400
+So in the next video, we'll continue creating the UI for our custom countdown project.
+
+141
+00:09:55,100 --> 00:09:55,970
+I'll see in that one.
+
+142
+00:09:56,450 --> 00:09:57,200
+Bye for now.

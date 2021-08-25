@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Array Method</title>
+</head>
+<body>
+   <h2>Array code </h2>
+
+   <script>
+      const inventors = [
+      {first : 'Albert', last: 'Einstein', year : 1979 ,passed : 1955 },
+      {first : 'Isacs', last: 'nwwton', year : 1983 ,passed : 1965 },
+      {first : 'Junion', last: 'Eao', year : 1593 ,passed : 1755 },
+      {first : 'Katalor', last: 'Wli', year : 1883 ,passed : 1555 },
+      {first : 'Whiewo', last: 'Kobar', year : 1573 ,passed : 1955 },
+      {first : 'wia', last: 'wgai', year : 1783 ,passed : 1955 },
+   ];
+   const people = [
+      'Beck','adah','BNeo ','Geoal','o9wla','Adso','adsow','Glom','Boom','aewo','Hoobart','Kahn ','Turon ','alai','jinda','lass'
+   ]
+   // Array.prototype.filter()
+   // 1. Filter the list of inventors for those who were born in the 1500's 
+      
+      // const fifteens = inventors.filter(function (inventor){
+      //    if(inventor.year >= 1500 && inventor.year <1600 ){
+      //       return true  ;
+      //    }
+      // });
+      // console.table(fifteens);
+      /* The short form of this function es6 */
+      const fifteen = inventors.filter(inventor => ((inventor.year >= 1500 && inventor.year <1600 )));
+      console.table(fifteen);
+   // Array.prototype.map()
+   // 2. Give us an array of the inventory first and last names 
+   const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}` );
+   console.log(fullNames);
+
+   // Array.prototype.sort()
+   // 3 . Sort the inventors by birthDate , oldest to youngest 
+   // const ordered = inventors.sort(function(a,b){
+   //    if(a.year > b.year){
+   //       return 1 ;
+   //    }else {
+   //       return -1 ;
+   //    }
+   // });
+   const ordered = inventors.filter((a,b) => a.year > b.year ? 1 : -1)
+   console.table(ordered);
+
+   // Array.prototype.reduce
+   // 4. How many rears did all the inventors live ?
+   //  var totalYears = 0 ; 
+   //  for (let i = 0; i < inventors.length; i++) {
+   //     totalYears += inventors[i].year;
+   //  }
+   const totalYears = inventors.reduce((total, inventor) => {
+      return total + (inventor.passed - inventor.year);
+   },0)
+    console.table(totalYears);
+   // 5. Sort the inventors by years lived  
+   const oldest = inventors.sort(function(a,b){
+      const lastGuy = a.passed - a.year ;
+      const nextGuy  = b.passed - a.year ;
+      return lastGuy>nextGuy ? -1 : 1 ;
+   });
+   console.table(oldest);
+      
+
+
+
+   </script>
+
+
+
+
+</body>
+</html>
